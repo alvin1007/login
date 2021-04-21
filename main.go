@@ -46,7 +46,8 @@ func main() {
 }
 
 func id_sql(id string) int {
-	conn, err := sql.Open("mysql", "alvin:alvin1007@tcp(127.0.0.1:3306)/alvin")
+	// sql.Opne ("mysql", "{username}:{password}@tcp(localhost:3306)/{databasename}")
+	conn, err := sql.Open("mysql", "alvin:alvin1007@tcp(localhost:3306)/alvin")
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
@@ -64,7 +65,8 @@ func id_sql(id string) int {
 }
 
 func password_sql(id string, password string) int {
-	conn, err := sql.Open("mysql", "alvin:alvin1007@tcp(127.0.0.1:3306)/alvin")
+	// sql.Opne ("mysql", "{username}:{password}@tcp(localhost:3306)/{databasename}")
+	conn, err := sql.Open("mysql", "alvin:alvin1007@tcp(localhost:3306)/alvin")
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
@@ -86,7 +88,8 @@ func password_sql(id string, password string) int {
 }
 
 func login_id(id string) int {
-	conn, err := sql.Open("mysql", "alvin:alvin1007@tcp(127.0.0.1:3306)/alvin")
+	// sql.Opne ("mysql", "{username}:{password}@tcp(localhost:3306)/{databasename}")
+	conn, err := sql.Open("mysql", "alvin:alvin1007@tcp(localhost:3306)/alvin")
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
@@ -106,7 +109,8 @@ func login_id(id string) int {
 }
 
 func login_password(id string, password string) int {
-	conn, err := sql.Open("mysql", "alvin:alvin1007@tcp(127.0.0.1:3306)/alvin")
+	// sql.Opne ("mysql", "{username}:{password}@tcp(localhost:3306)/{databasename}")
+	conn, err := sql.Open("mysql", "alvin:alvin1007@tcp(localhost:3306)/alvin")
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
